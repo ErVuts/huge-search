@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Arial');
 
 
 * {
 	box-sizing: border-box;
+	transition: all .4s ease-in;
 }
 
 
@@ -17,9 +18,25 @@ body {
 }
 
 form {
-	width:60%;
+	display:inline-block;
+	width:75%;
 	height:120px;
 	margin:25px 0px 0px 10%;
+}
+
+button {
+	display:inline-block;
+	border: none;
+	background: transparent url(../img/magnifier.svg);
+	height: 70px;
+	width: 70px;
+	
+}
+
+button:hover {
+	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
 }
 
 .searchbar {
@@ -29,31 +46,77 @@ form {
 	color:#c2c2c2;
 	outline: 0;
 	caret-color:#ec5a62
-	
 }
 
 .container {
 	display: inline-block;
-	width: 80%;
-	margin:25px 0px 0px 10%;
+	margin: 20px 0 0 150px;
+	width: 90%;
 	
 }
 
 .people {
 	display: inline-block;
-	width: 30%;
+	width: 29%;
+	margin-left: 20px;
 	
 }
 
 .popular {
 	display: inline-block;
-	width: 30%;
+	width: 29%;
+	margin-left: 20px;
 }
 
 .recent {
 	display: inline-block;
-	width: 30%;
+	width: 29%;
+	margin-left: 20px;
 }
 
+ul {
+	list-style-type:none;
+	padding: 0;
+}
 
+li {
+	height: 75px;
+	width:93%;
+	margin: 5px;
+	border-radius:5px;
+}
 
+a {
+	display:block;
+	text-decoration:none;
+	cursor:pointer;
+	background-color: #ebebec;
+}
+
+h2 {
+	margin-left: 10px;
+	color:#c2c2c2;
+	font-weight: 800;
+}
+
+h3 {
+	display:inline-block;
+	color:#acacac;
+	margin: 30px 0 0 15px;
+	position:absolute;
+		
+}
+
+img {
+	display:inline-block;
+	margin: 10px 0 10px 15px;
+}
+
+a:hover {
+	background-color: #e4e4e5;
+	color:red;
+}
+
+a:hover > h3 {
+	color:red;
+}
