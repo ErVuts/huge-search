@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+html {
+	font: 10px/1.6 Arial, sans-serif;
+	height: 100%;
+}
+
+body {
+     color: #333;
+     background-color: #f1f1f1;
+}
+
+form {
+	width:60%;
+	height:120px;
+	margin:25px 0px 0px 10%;
+}
+
+.searchbar {
+	font-size: 9em;
+	background-color:transparent;
+	border: none;
+	color:#c2c2c2;
+	outline: 0;
+	caret-color:#ec5a62
+	
+}
+
+.container {
+	display: inline-block;
+	width: 80%;
+	margin:25px 0px 0px 10%;
+	
+}
+
+.people {
+	display: inline-block;
+	width: 30%;
+	
+}
+
+.popular {
+	display: inline-block;
+	width: 30%;
+}
+
+.recent {
+	display: inline-block;
+	width: 30%;
+}
+
+
+
