@@ -3,144 +3,181 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="icon" href="favicon.png">
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Huge Search</title>
 </head>
 <body>
-	<header>
-		<form>
-			<input type="text" class="searchbar" placeholder="Search..." >
+<div class="container">
+  	<header>
+		<form class="search">
+			<input type="text" class="search__bar" placeholder="Search...">
+    <button class="btn">
+    </button>
 		</form> 
-		<button class="submit">
-		</button>
 	</header>
-	<main class="container">
-		<section class="people">
-			<h2 class="colresult">PEOPLE</h2>
-			<ul>
-					<li>
-						<a href="https://twitter.com/SaraSoueidan">	
-							<img src="img/avatars/SaraSoueidan.jpeg" class="round"> 
-							<h3>Sara Soueidan</h3>
-						</a>
-						</li>
-					<li>
-							<a href="https://twitter.com/rachsmithtweets">
-							<img src="img/avatars/RachelSmith.png" class="round">
-							<h3>Rachel Smith</h3>
-							</a>
-					</li>				
-					<li>
-						<a href="https://twitter.com/peterfinlan">
-							<img src="img/avatars/PeterFinlan.jpeg" class="round">
-							<h3>Peter Finlan</h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/pcridesagain">
-							<img src="img/avatars/PatrickCox.png" class="round">
-							<h3>Patrick Cox</h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/twholman">
-							<img src="img/avatars/TimHolman.jpeg" class="round">
-							<h3>Tim Holman</h3>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/shaund0na">
-							<img src="img/avatars/ShaunDona.jpeg" class="round">
-							<h3>Shaun Dona</h3>
-						</a>
-					</li>
-			</ul>
-		</section>
-
-		<section class="popular">
-			<h2 class="colresult">POPULAR</h2>
-			<ul>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/08/05/page-preloading-effect/"><img src="img/thumbs/PagePreloadingEffect.png">
-									<h3>Page Preloading Effect</h3>
-								</a>
-							</li>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/05/28/arrow-navigation-styles/">
-								<img src="img/thumbs/ArrowNavigationStyles.png">
-								<h3>Arrow Navigation Styles</h3>
-								</a>
-								</li>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/">
-								<img src="img/thumbs/HoverEffectsIdeasNew.png">
-								<h3>Ideas for Subtle Hover Effects</h3>
-								</a>
-							</li>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/">
-								<img src="img/thumbs/FreebieHalcyonDays.png">
-								<h3>Halcyon Days Template</h3>
-								</a>
-							</li>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/">
-								<img src="img/thumbs/ArticleIntroEffects.png">
-								<h3>Inspiration for Article Intro Effects</h3>
-								</a>
-							</li>
-							<li>
-								<a href="https://tympanus.net/codrops/2014/06/26/draggable-dual-view-slideshow/">
-								<img src="img/thumbs/DraggableDualViewSlideshow.png">
-								<h3>Draggable Dual-View Slideshow</h3>
-								</a>
-							</li>
-			</ul>
-		</section>
-		<section class="recent">
-			<h2 class="colresult">RECENT</h2>
-			<ul>
-						<li>
-							<a href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
-							
-								<img src="img/thumbs/TooltipStylesInspiration.png">
-								<h3>Tooltip Styles Inspiration</h3>
-							
-							</a>
-					</li>
-							<li>
-						<a href="http://tympanus.net/codrops/2014/09/23/animated-backgba-circle-headers/">
-								<img src="img/thumbs/AnimatedHeaderBackgrounds.png">
-								<h3>Animated Backgba-circle Headers</h3>
-						</a>
-							</li>
-							<li>
-						<a href="https://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/">
-								<img src="img/thumbs/OffCanvas.png">
-								<h3>Off-Canvas Menu Effects</h3>
-							</li>
-							<li>
-						</a>
-						<a href="http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/">
-								<img src="img/thumbs/TabStyles.png">
-								<h3>Tab Styles Inspiration</h3>
-							</li>
-							<li>
-						</a>
-						<a href="https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">
-								<img src="img/thumbs/ResponsiveSVGs.png">
-								<h3>Make SVGs Responsive with CSS</h3>
-							</li>
-							<li>
-						</a>
-						<a href="https://tympanus.net/codrops/2014/07/23/notification-styles-inspiration/">
-								<img src="img/thumbs/NotificationStyles.png">
-								<h3>Notification Styles Inspiration
-								</h3>
-						</a>
-							</li>
-					</ul>		
-		</section>
-	</main>
+  <main>
+    <div class="result">
+      <h2 class="result__title">People</h2>
+      <ul class="result__lists">
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/SaraSoueidan" class="result__link">
+            <img src="img/avatars/SaraSoueidan.jpeg" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+              Sara Soueidan
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/rachsmithtweets" class="result__link">
+            <img src="img/avatars/RachelSmith.png" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+             Rachel Smith
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/peterfinlan" class="result__link">
+            <img src="img/avatars/PeterFinlan.jpeg" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+              Peter Finlan
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/pcridesagain" class="result__link">
+            <img src="img/avatars/PatrickCox.png" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+              Patrick Cox
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/twholman" class="result__link">
+            <img src="img/avatars/TimHolman.jpeg" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+              Tim Holman
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://twitter.com/shaund0na" class="result__link">
+            <img src="img/avatars/ShaunDona.jpeg" alt="" class="result__img result__img--round">
+            <h3 class="result__subtitle">
+              Shaun Dona
+            </h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="result">
+      <h2 class="result__title">Popular</h2>
+      <ul class="result__lists">
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/08/05/page-preloading-effect/" class="result__link">
+            <img src="img/thumbs/PagePreloadingEffect.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Page Preloading Effect
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/05/28/arrow-navigation-styles/" class="result__link">
+            <img src="img/thumbs/ArrowNavigationStyles.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Arrow Navigation Styles
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://ervuts.github.io/huge-search/img/thumbs/HoverEffectsIdeasNew.png" class="result__link">
+            <img src="img/thumbs/HoverEffectsIdeasNew.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Ideas for Subtle Hover Effects
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/" class="result__link">
+            <img src="img/thumbs/FreebieHalcyonDays.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Halcyon Days Template
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/" class="result__link">
+            <img src="img/thumbs/ArticleIntroEffects.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Inspiration for Article Intro Effects
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/06/26/draggable-dual-view-slideshow/" class="result__link">
+            <img src="img/thumbs/DraggableDualViewSlideshow.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Draggable Dual-View Slideshow
+            </h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="result">
+      <h2 class="result__title">RECENT</h2>
+      <ul class="result__lists">
+        <li class="result__list">
+          <a target="_blank" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/" class="result__link">
+            <img src="img/thumbs/TooltipStylesInspiration.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Tooltip Styles Inspiration
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/" class="result__link">
+            <img src="img/thumbs/AnimatedHeaderBackgrounds.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Animated Backgba-circle Headers
+                </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/" class="result__link">
+            <img src="img/thumbs/OffCanvas.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Off-Canvas Menu Effects
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/" class="result__link">
+            <img src="img/thumbs/TabStyles.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Tab Styles Inspiration
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/" class="result__link">
+            <img src="img/thumbs/ResponsiveSVGs.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Make SVGs Responsive with CSS
+            </h3>
+          </a>
+        </li>
+        <li class="result__list">
+          <a target="_blank" href="https://tympanus.net/codrops/2014/07/23/notification-styles-inspiration/" class="result__link" >
+            <img src="img/thumbs/NotificationStyles.png" alt="" class="result__img">
+            <h3 class="result__subtitle">
+              Notification Styles Inspiration 
+            </h3>
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </main>
+</div>
 </body>
 </html>
